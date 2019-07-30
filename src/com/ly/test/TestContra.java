@@ -10,7 +10,7 @@ import com.ly.core.MyFrame;
  */
 public class TestContra {
     public static void main(String[] args) {
-        new MyFrame().launchFrame();
+      new MyFrame().launchFrame();
 
     }
 }

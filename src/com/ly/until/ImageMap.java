@@ -8,6 +8,7 @@ import java.util.Map;
 
 public class ImageMap {
     private static final Map<String, Image> map = new HashMap<>();
+
     static {
         map.put("bg01",ImageUtil.getImage(Constant.IMG_PRE + "bg01" + Constant.IMG_AFTER));
     }
