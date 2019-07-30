@@ -5,21 +5,14 @@ import java.awt.*;
 import java.io.IOException;
 
 public class ImageUtil {
-    private static String path;
 
-    public ImageUtil(String path) {
-        this.path = path;
-    }
-
-    static {
+    public static Image getImage(String path){
+        Image image = null;
         try {
-            Image image = ImageIO.read(ImageUtil.class.getClassLoader().getResourceAsStream(path));
+            image = ImageIO.read(ImageUtil.class.getClassLoader().getResourceAsStream(path));
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-
-    public static String getPath() {
-        return path;
+        return image;
     }
 }
